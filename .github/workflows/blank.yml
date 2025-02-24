@@ -4,7 +4,5 @@ jobs:
   Hello-World-Job:
     runs-on:
       - codebuild-TestwithGIthub-${{ github.run_id }}-${{ github.run_attempt }}
-      - fleet:myFleet
-      - image:arm-3.0
     steps:
-      - run: echo "Hello World!"
+      - run: echo "Hello World"
